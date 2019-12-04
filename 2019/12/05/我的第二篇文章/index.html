@@ -6,22 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://luozirong31.github.io">
-  <title>如何在vscode中使用Markdown,并实现同步预览？ | 大毛的技术博客</title>
+  <title>如何在Markdown中插入本地图片 | 大毛的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="如何在vscode中使用Markdown,并实现同步预览？一、安装插件1、搜索Markdown Preview Enhanced  快捷键（Ctrl+Shift+X） 2、点击install安装  二、打开md文件 鼠标左键，点击“打开方式”，点击“用vscode打开” 做完这一步后，以后就可以直接点开md文件，原因是电脑会默认使用vscode打开 三、进入预览进入预览有三种方式 方法一：点击工作">
+  <meta name="description" content="如何在Markdown中插入本地图片我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接有道云笔记链接 https:&#x2F;&#x2F;note.youdao.com&#x2F; 原因：如果存在本地，图片既不灵活也不好分享，本地图片的路径更改或丢失都会造成markdown文件调不出图(我踩过的坑) 具体做法1、打开有道云笔记并登录2、点击左侧新文档3、点击新建文件夹4、右键点击上传文件5、选择要上传的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何在vscode中使用Markdown,并实现同步预览？">
-<meta property="og:url" content="https:&#x2F;&#x2F;luozirong31.github.io&#x2F;2019&#x2F;12&#x2F;04&#x2F;%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0&#x2F;index.html">
+<meta property="og:title" content="如何在Markdown中插入本地图片">
+<meta property="og:url" content="https:&#x2F;&#x2F;luozirong31.github.io&#x2F;2019&#x2F;12&#x2F;05&#x2F;%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0&#x2F;index.html">
 <meta property="og:site_name" content="大毛的技术博客">
-<meta property="og:description" content="如何在vscode中使用Markdown,并实现同步预览？一、安装插件1、搜索Markdown Preview Enhanced  快捷键（Ctrl+Shift+X） 2、点击install安装  二、打开md文件 鼠标左键，点击“打开方式”，点击“用vscode打开” 做完这一步后，以后就可以直接点开md文件，原因是电脑会默认使用vscode打开 三、进入预览进入预览有三种方式 方法一：点击工作">
+<meta property="og:description" content="如何在Markdown中插入本地图片我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接有道云笔记链接 https:&#x2F;&#x2F;note.youdao.com&#x2F; 原因：如果存在本地，图片既不灵活也不好分享，本地图片的路径更改或丢失都会造成markdown文件调不出图(我踩过的坑) 具体做法1、打开有道云笔记并登录2、点击左侧新文档3、点击新建文件夹4、右键点击上传文件5、选择要上传的">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB9c0559566884458642480c9eaff6fd0b?method=download&amp;shareKey=32e97d952faffd4e2af748370fe4dda7">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEBe12ee253061d22c85d5d4c4f8e02785a?method=download&amp;shareKey=29d28d24d1887e3302913867ca3fa7ff">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEBdfccb55e796c3d238c4f392d256348a5?method=download&amp;shareKey=19b15a4bec9255a9219630981807c476">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB774796ee308bf8dfe3e0de42faf59f9c?method=download&amp;shareKey=1419dfaeabad3fabf3540d4d949d7a5a">
-<meta property="og:updated_time" content="2019-12-04T12:30:10.577Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB7375a2eb5e01c328f04ae31d5e9aba21?method=download&amp;shareKey=d36b8afad3fcf4660307f4123c879c17">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB0264a51a459fc4d549eb89696eeff30d?method=download&amp;shareKey=52bbdf462677069f8c17117c4d13a1dd">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEBaa333ce20110411319fe7bd2b6355df9?method=download&amp;shareKey=3382a90b01d90b3e951055317402c2b5">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEBb4c4460aec5c7df2d6460c01f3806d65?method=download&amp;shareKey=fbd6adcda2afa4e6e86f894034af9223">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEBff721e369e2bb8f541b40e6fec0c9ca0?method=download&amp;shareKey=7c2bfc4614769648c5c8bbd886323dcb">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB7881965975228c1d37d6506a5c8db1b5?method=download&amp;shareKey=9f7474ade060c8a1b12789d5a016591f">
+<meta property="og:updated_time" content="2019-12-04T13:10:02.638Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB9c0559566884458642480c9eaff6fd0b?method=download&amp;shareKey=32e97d952faffd4e2af748370fe4dda7">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB7375a2eb5e01c328f04ae31d5e9aba21?method=download&amp;shareKey=d36b8afad3fcf4660307f4123c879c17">
   
     <link rel="alternative" href="/atom.xml" title="大毛的技术博客" type="application/atom+xml">
   
@@ -161,39 +163,34 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-我的第二篇文章" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      如何在vscode中使用Markdown,并实现同步预览？
+      如何在Markdown中插入本地图片
     </h1>
   
 
         
-        <a href="/2019/12/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2019-12-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-04</time>
+        <a href="/2019/12/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-article-date">
+  	<time datetime="2019-12-04T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="如何在vscode中使用Markdown-并实现同步预览？"><a href="#如何在vscode中使用Markdown-并实现同步预览？" class="headerlink" title="如何在vscode中使用Markdown,并实现同步预览？"></a>如何在vscode中使用Markdown,并实现同步预览？</h1><h2 id="一、安装插件"><a href="#一、安装插件" class="headerlink" title="一、安装插件"></a>一、安装插件</h2><p>1、搜索Markdown Preview Enhanced</p>
-<p><img src="https://note.youdao.com/yws/api/personal/file/WEB9c0559566884458642480c9eaff6fd0b?method=download&shareKey=32e97d952faffd4e2af748370fe4dda7" alt="avatar"></p>
-<p>快捷键（Ctrl+Shift+X）</p>
-<p>2、点击install安装</p>
-<p><img src="https://note.youdao.com/yws/api/personal/file/WEBe12ee253061d22c85d5d4c4f8e02785a?method=download&shareKey=29d28d24d1887e3302913867ca3fa7ff" alt="avatar"></p>
-<h2 id="二、打开md文件"><a href="#二、打开md文件" class="headerlink" title="二、打开md文件"></a>二、打开md文件</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEBdfccb55e796c3d238c4f392d256348a5?method=download&shareKey=19b15a4bec9255a9219630981807c476" alt="avatar"></p>
-<p>鼠标左键，点击“打开方式”，点击“用vscode打开”</p>
-<p>做完这一步后，以后就可以直接点开md文件，原因是电脑会默认使用vscode打开</p>
-<h2 id="三、进入预览"><a href="#三、进入预览" class="headerlink" title="三、进入预览"></a>三、进入预览</h2><p>进入预览有三种方式</p>
-<p>方法一：点击工作区右上角的按钮</p>
-<p><img src="https://note.youdao.com/yws/api/personal/file/WEB774796ee308bf8dfe3e0de42faf59f9c?method=download&shareKey=1419dfaeabad3fabf3540d4d949d7a5a" alt="avatar"></p>
-<p>方法二：快捷键（Ctrl+K V）</p>
-<p>方法三：按F1，输入Markdown，选择Open Locked Preview to the Side即可</p>
+        <h1 id="如何在Markdown中插入本地图片"><a href="#如何在Markdown中插入本地图片" class="headerlink" title="如何在Markdown中插入本地图片"></a>如何在Markdown中插入本地图片</h1><h1 id="我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接"><a href="#我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接" class="headerlink" title="我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接"></a>我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接</h1><p>有道云笔记链接 <a href="https://note.youdao.com/" target="_blank" rel="noopener">https://note.youdao.com/</a></p>
+<p>原因：如果存在本地，图片既不灵活也不好分享，本地图片的路径更改或丢失都会造成markdown文件调不出图(我踩过的坑)</p>
+<h2 id="具体做法"><a href="#具体做法" class="headerlink" title="具体做法"></a>具体做法</h2><h3 id="1、打开有道云笔记并登录"><a href="#1、打开有道云笔记并登录" class="headerlink" title="1、打开有道云笔记并登录"></a>1、打开有道云笔记并登录</h3><h3 id="2、点击左侧新文档"><a href="#2、点击左侧新文档" class="headerlink" title="2、点击左侧新文档"></a>2、点击左侧新文档</h3><h3 id="3、点击新建文件夹"><a href="#3、点击新建文件夹" class="headerlink" title="3、点击新建文件夹"></a>3、点击新建文件夹</h3><h3 id="4、右键点击上传文件"><a href="#4、右键点击上传文件" class="headerlink" title="4、右键点击上传文件"></a>4、右键点击上传文件</h3><h3 id="5、选择要上传的图片"><a href="#5、选择要上传的图片" class="headerlink" title="5、选择要上传的图片"></a>5、选择要上传的图片</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7375a2eb5e01c328f04ae31d5e9aba21?method=download&shareKey=d36b8afad3fcf4660307f4123c879c17" alt=" "></p>
+<h3 id="6、点击分享"><a href="#6、点击分享" class="headerlink" title="6、点击分享"></a>6、点击分享</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB0264a51a459fc4d549eb89696eeff30d?method=download&shareKey=52bbdf462677069f8c17117c4d13a1dd" alt=" "></p>
+<h3 id="7、点击查看分享"><a href="#7、点击查看分享" class="headerlink" title="7、点击查看分享"></a>7、点击查看分享</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBaa333ce20110411319fe7bd2b6355df9?method=download&shareKey=3382a90b01d90b3e951055317402c2b5" alt=" "></p>
+<h3 id="8、进入页面后右键点击复制图片地址"><a href="#8、进入页面后右键点击复制图片地址" class="headerlink" title="8、进入页面后右键点击复制图片地址"></a>8、进入页面后右键点击复制图片地址</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBb4c4460aec5c7df2d6460c01f3806d65?method=download&shareKey=fbd6adcda2afa4e6e86f894034af9223" alt=" "></p>
+<h3 id="9、本地预览"><a href="#9、本地预览" class="headerlink" title="9、本地预览"></a>9、本地预览</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBff721e369e2bb8f541b40e6fec0c9ca0?method=download&shareKey=7c2bfc4614769648c5c8bbd886323dcb" alt=" "></p>
+<h2 id="最终展示"><a href="#最终展示" class="headerlink" title="最终展示"></a>最终展示</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7881965975228c1d37d6506a5c8db1b5?method=download&shareKey=9f7474ade060c8a1b12789d5a016591f" alt="SRD"></p>
 
       
 
@@ -273,7 +270,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://luozirong31.github.io/2019/12/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://luozirong31.github.io/2019/12/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -287,18 +284,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/12/04/text/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          text
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/11/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/12/04/text/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">text</div>
       <i class="icon-circle-right"></i>
     </a>
   
