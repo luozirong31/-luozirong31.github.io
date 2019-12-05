@@ -8,10 +8,13 @@
   <link rel="dns-prefetch" href="https://luozirong31.github.io">
   <title>大毛的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="大毛笔记">
+<meta name="keywords" content="c，java">
+<meta property="og:type" content="website">
 <meta property="og:title" content="大毛的技术博客">
 <meta property="og:url" content="https:&#x2F;&#x2F;luozirong31.github.io&#x2F;index.html">
 <meta property="og:site_name" content="大毛的技术博客">
+<meta property="og:description" content="大毛笔记">
 <meta property="og:locale" content="zh-cn">
 <meta name="twitter:card" content="summary">
   
@@ -155,6 +158,79 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-我的第三篇文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/">如何把二进制转换成十进制、十六进制和八进制？</a>
+    </h1>
+  
+
+        
+        <a href="/2019/12/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-article-date">
+  	<time datetime="2019-12-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="众所周知，我们输入的数据都是以二进制的形式存放在内存中，比如我以十进制的形式输入39，那么39就会被机器转换成一串只用0和1来表示的00100111，然后存放在内存中。如果反过来，我想把这个39从内存中取出来，同样，机器会先把00100111这串数字转换成39，再做输出，今天我们就来学习———————————————"><a href="#众所周知，我们输入的数据都是以二进制的形式存放在内存中，比如我以十进制的形式输入39，那么39就会被机器转换成一串只用0和1来表示的00100111，然后存放在内存中。如果反过来，我想把这个39从内存中取出来，同样，机器会先把00100111这串数字转换成39，再做输出，今天我们就来学习———————————————" class="headerlink" title="众所周知，我们输入的数据都是以二进制的形式存放在内存中，比如我以十进制的形式输入39，那么39就会被机器转换成一串只用0和1来表示的00100111，然后存放在内存中。如果反过来，我想把这个39从内存中取出来，同样，机器会先把00100111这串数字转换成39，再做输出，今天我们就来学习———————————————"></a>众所周知，我们输入的数据都是以二进制的形式存放在内存中，比如我以十进制的形式输入39，那么39就会被机器转换成一串只用0和1来表示的00100111，然后存放在内存中。如果反过来，我想把这个39从内存中取出来，同样，机器会先把00100111这串数字转换成39，再做输出，今天我们就来学习———————————————</h3><h1 id="如何把二进制转换成十进制、十六进制和八进制"><a href="#如何把二进制转换成十进制、十六进制和八进制" class="headerlink" title="如何把二进制转换成十进制、十六进制和八进制"></a>如何把二进制转换成十进制、十六进制和八进制</h1><h2 id="1、二进制转换成十进制"><a href="#1、二进制转换成十进制" class="headerlink" title="1、二进制转换成十进制"></a>1、二进制转换成十进制</h2><p>为了方便理解，我来举个栗子：如何将1010转换成十进制？</p>
+<p>以下是我的解答：</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEBd22a2a057db6242d86c65eb1cb00d792?method=download&shareKey=368de3566b9c651d9cb3bc0491eb3e0d" alt="3"></p>
+<h3 id="方法：假设有n位数，从左到右依次把所有位上的数都各自乘以2的-n-1-次幂，然后求和"><a href="#方法：假设有n位数，从左到右依次把所有位上的数都各自乘以2的-n-1-次幂，然后求和" class="headerlink" title="方法：假设有n位数，从左到右依次把所有位上的数都各自乘以2的(n-1)次幂，然后求和"></a>方法：假设有n位数，从左到右依次把所有位上的数都各自乘以2的(n-1)次幂，然后求和</h3><h2 id="2、二进制转换成十六进制"><a href="#2、二进制转换成十六进制" class="headerlink" title="2、二进制转换成十六进制"></a>2、二进制转换成十六进制</h2><p>问题：如何将11101001转换成十六进制</p>
+<p>解答：</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB5c314e1723c0d8b2a69fb0da03dcdf25?method=download&shareKey=9ace9c7de63be2b660f83d61680483e9" alt="4"></p>
+<h3 id="方法：二进制的四位可以表示十六进制的一位"><a href="#方法：二进制的四位可以表示十六进制的一位" class="headerlink" title="方法：二进制的四位可以表示十六进制的一位"></a>方法：二进制的四位可以表示十六进制的一位</h3><h2 id="3、二进制转换成八进制"><a href="#3、二进制转换成八进制" class="headerlink" title="3、二进制转换成八进制"></a>3、二进制转换成八进制</h2><p>问题：如何将11101001转换成十进制</p>
+<p>解答：</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB90ee906489eca877409d9d0ac4945c8f?method=download&shareKey=7a631a735ae7134b7f731c9dc578ac30" alt="5"></p>
+<h3 id="方法：二进制的三位可以表示八进制的一位"><a href="#方法：二进制的三位可以表示八进制的一位" class="headerlink" title="方法：二进制的三位可以表示八进制的一位"></a>方法：二进制的三位可以表示八进制的一位</h3><h2 id="关于Windows10如何使用计算器"><a href="#关于Windows10如何使用计算器" class="headerlink" title="#关于Windows10如何使用计算器"></a>#关于Windows10如何使用计算器</h2><h3 id="快捷键Win-S-Win-Q，搜索计算器"><a href="#快捷键Win-S-Win-Q，搜索计算器" class="headerlink" title="快捷键Win+S/Win+Q，搜索计算器"></a>快捷键Win+S/Win+Q，搜索计算器</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBa2e2c3b35c318faceb72482a822f1eaf?method=download&shareKey=181fc16f0e6c914d2b6d8fb20e110aec" alt="1"></p>
+<h3 id="打开计算器，比如我输入31-十进制"><a href="#打开计算器，比如我输入31-十进制" class="headerlink" title="打开计算器，比如我输入31(十进制)"></a>打开计算器，比如我输入31(十进制)</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB078aa6f606ebad75842ffe0a1d110498?method=download&shareKey=a6cc3eaf49121b9c996926b51d3feb26" alt="2"></p>
+<h4 id="注：HEX表示十六进制，DEC表示十进制，OCT表示八进制，BIN表示二进制"><a href="#注：HEX表示十六进制，DEC表示十进制，OCT表示八进制，BIN表示二进制" class="headerlink" title="注：HEX表示十六进制，DEC表示十进制，OCT表示八进制，BIN表示二进制"></a>注：HEX表示十六进制，DEC表示十进制，OCT表示八进制，BIN表示二进制</h4><h3 id="结果你就可以清晰地看到31的转换结果了"><a href="#结果你就可以清晰地看到31的转换结果了" class="headerlink" title="结果你就可以清晰地看到31的转换结果了"></a>结果你就可以清晰地看到31的转换结果了</h3><h3 id="怎么样？是不是很方便-｢･ω･-｢"><a href="#怎么样？是不是很方便-｢･ω･-｢" class="headerlink" title="怎么样？是不是很方便(｢･ω･)｢"></a>怎么样？是不是很方便(｢･ω･)｢</h3>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/12/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-我的第二篇文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -175,13 +251,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="如何在Markdown中插入本地图片"><a href="#如何在Markdown中插入本地图片" class="headerlink" title="如何在Markdown中插入本地图片"></a>如何在Markdown中插入本地图片</h1><h1 id="我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接"><a href="#我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接" class="headerlink" title="我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接"></a>我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接</h1><p>有道云笔记链接 <a href="https://note.youdao.com/" target="_blank" rel="noopener">https://note.youdao.com/</a></p>
-<p>原因：如果存在本地，图片既不灵活也不好分享，本地图片的路径更改或丢失都会造成markdown文件调不出图(我踩过的坑)</p>
-<h2 id="具体做法"><a href="#具体做法" class="headerlink" title="具体做法"></a>具体做法</h2><h3 id="1、打开有道云笔记并登录"><a href="#1、打开有道云笔记并登录" class="headerlink" title="1、打开有道云笔记并登录"></a>1、打开有道云笔记并登录</h3><h3 id="2、点击左侧新文档"><a href="#2、点击左侧新文档" class="headerlink" title="2、点击左侧新文档"></a>2、点击左侧新文档</h3><h3 id="3、点击新建文件夹"><a href="#3、点击新建文件夹" class="headerlink" title="3、点击新建文件夹"></a>3、点击新建文件夹</h3><h3 id="4、右键点击上传文件"><a href="#4、右键点击上传文件" class="headerlink" title="4、右键点击上传文件"></a>4、右键点击上传文件</h3><h3 id="5、选择要上传的图片"><a href="#5、选择要上传的图片" class="headerlink" title="5、选择要上传的图片"></a>5、选择要上传的图片</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7375a2eb5e01c328f04ae31d5e9aba21?method=download&shareKey=d36b8afad3fcf4660307f4123c879c17" alt=" "></p>
-<h3 id="6、点击分享"><a href="#6、点击分享" class="headerlink" title="6、点击分享"></a>6、点击分享</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB0264a51a459fc4d549eb89696eeff30d?method=download&shareKey=52bbdf462677069f8c17117c4d13a1dd" alt=" "></p>
-<h3 id="7、点击查看分享"><a href="#7、点击查看分享" class="headerlink" title="7、点击查看分享"></a>7、点击查看分享</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBaa333ce20110411319fe7bd2b6355df9?method=download&shareKey=3382a90b01d90b3e951055317402c2b5" alt=" "></p>
-<h3 id="8、进入页面后右键点击复制图片地址"><a href="#8、进入页面后右键点击复制图片地址" class="headerlink" title="8、进入页面后右键点击复制图片地址"></a>8、进入页面后右键点击复制图片地址</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBb4c4460aec5c7df2d6460c01f3806d65?method=download&shareKey=fbd6adcda2afa4e6e86f894034af9223" alt=" "></p>
-<h3 id="9、本地预览"><a href="#9、本地预览" class="headerlink" title="9、本地预览"></a>9、本地预览</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBff721e369e2bb8f541b40e6fec0c9ca0?method=download&shareKey=7c2bfc4614769648c5c8bbd886323dcb" alt=" "></p>
+        <h1 id="如何在Markdown中插入本地图片"><a href="#如何在Markdown中插入本地图片" class="headerlink" title="如何在Markdown中插入本地图片"></a>如何在Markdown中插入本地图片</h1><h2 id="我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接"><a href="#我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接" class="headerlink" title="我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接"></a>我的方法：使用有道云笔记生成图片网络地址，在语法的括号中填入图片的网络链接</h2><p>不保存在本地的原因：保存在本地，图片既不灵活也不好分享，本地图片的路径更改或丢失都会造成markdown文件调不出图(也是我踩过的坑(ಡωಡ)</p>
+<h2 id="具体做法"><a href="#具体做法" class="headerlink" title="具体做法"></a>具体做法</h2><h4 id="首先打开有道云笔记并登录"><a href="#首先打开有道云笔记并登录" class="headerlink" title="首先打开有道云笔记并登录"></a>首先打开有道云笔记并登录</h4><p>有道云笔记链接 <a href="https://note.youdao.com/" target="_blank" rel="noopener">https://note.youdao.com/</a></p>
+<h3 id="1、点击左侧的新文档"><a href="#1、点击左侧的新文档" class="headerlink" title="1、点击左侧的新文档"></a>1、点击左侧的新文档</h3><h3 id="2、点击新建文件夹"><a href="#2、点击新建文件夹" class="headerlink" title="2、点击新建文件夹"></a>2、点击新建文件夹</h3><h3 id="3、点击上传"><a href="#3、点击上传" class="headerlink" title="3、点击上传"></a>3、点击上传</h3><h3 id="4、点击文件，然后在本地选择要上传的图片"><a href="#4、点击文件，然后在本地选择要上传的图片" class="headerlink" title="4、点击文件，然后在本地选择要上传的图片"></a>4、点击文件，然后在本地选择要上传的图片</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7375a2eb5e01c328f04ae31d5e9aba21?method=download&shareKey=d36b8afad3fcf4660307f4123c879c17" alt=" "></p>
+<h3 id="5、点击分享"><a href="#5、点击分享" class="headerlink" title="5、点击分享"></a>5、点击分享</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB0264a51a459fc4d549eb89696eeff30d?method=download&shareKey=52bbdf462677069f8c17117c4d13a1dd" alt=" "></p>
+<h3 id="6、点击查看分享"><a href="#6、点击查看分享" class="headerlink" title="6、点击查看分享"></a>6、点击查看分享</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBaa333ce20110411319fe7bd2b6355df9?method=download&shareKey=3382a90b01d90b3e951055317402c2b5" alt=" "></p>
+<h3 id="7、进入页面后右键点击复制图片地址"><a href="#7、进入页面后右键点击复制图片地址" class="headerlink" title="7、进入页面后右键点击复制图片地址"></a>7、进入页面后右键点击复制图片地址</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBb4c4460aec5c7df2d6460c01f3806d65?method=download&shareKey=fbd6adcda2afa4e6e86f894034af9223" alt=" "></p>
+<h3 id="8、本地预览"><a href="#8、本地预览" class="headerlink" title="8、本地预览"></a>8、本地预览</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBff721e369e2bb8f541b40e6fec0c9ca0?method=download&shareKey=7c2bfc4614769648c5c8bbd886323dcb" alt=" "></p>
 <h2 id="最终展示"><a href="#最终展示" class="headerlink" title="最终展示"></a>最终展示</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7881965975228c1d37d6506a5c8db1b5?method=download&shareKey=9f7474ade060c8a1b12789d5a016591f" alt="SRD"></p>
 
       
@@ -245,19 +321,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="如何在vscode中使用Markdown-并实现同步预览？"><a href="#如何在vscode中使用Markdown-并实现同步预览？" class="headerlink" title="如何在vscode中使用Markdown,并实现同步预览？"></a>如何在vscode中使用Markdown,并实现同步预览？</h1><h2 id="一、安装插件"><a href="#一、安装插件" class="headerlink" title="一、安装插件"></a>一、安装插件</h2><p>1、搜索Markdown Preview Enhanced</p>
-<p><img src="https://note.youdao.com/yws/api/personal/file/WEB9c0559566884458642480c9eaff6fd0b?method=download&shareKey=32e97d952faffd4e2af748370fe4dda7" alt="avatar"></p>
+        <h1 id="如何在vscode中使用Markdown-并实现同步预览？"><a href="#如何在vscode中使用Markdown-并实现同步预览？" class="headerlink" title="如何在vscode中使用Markdown,并实现同步预览？"></a>如何在vscode中使用Markdown,并实现同步预览？</h1><h2 id="一、安装插件"><a href="#一、安装插件" class="headerlink" title="一、安装插件"></a>一、安装插件</h2><h3 id="1、搜索Markdown-Preview-Enhanced"><a href="#1、搜索Markdown-Preview-Enhanced" class="headerlink" title="1、搜索Markdown Preview Enhanced"></a>1、搜索Markdown Preview Enhanced</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB9c0559566884458642480c9eaff6fd0b?method=download&shareKey=32e97d952faffd4e2af748370fe4dda7" alt="avatar"></p>
 <p>快捷键（Ctrl+Shift+X）</p>
-<p>2、点击install安装</p>
-<p><img src="https://note.youdao.com/yws/api/personal/file/WEBe12ee253061d22c85d5d4c4f8e02785a?method=download&shareKey=29d28d24d1887e3302913867ca3fa7ff" alt="avatar"></p>
+<h3 id="2、点击install安装"><a href="#2、点击install安装" class="headerlink" title="2、点击install安装"></a>2、点击install安装</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBe12ee253061d22c85d5d4c4f8e02785a?method=download&shareKey=29d28d24d1887e3302913867ca3fa7ff" alt="avatar"></p>
 <h2 id="二、打开md文件"><a href="#二、打开md文件" class="headerlink" title="二、打开md文件"></a>二、打开md文件</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEBdfccb55e796c3d238c4f392d256348a5?method=download&shareKey=19b15a4bec9255a9219630981807c476" alt="avatar"></p>
-<p>鼠标左键，点击“打开方式”，点击“用vscode打开”</p>
-<p>做完这一步后，以后就可以直接点开md文件，原因是电脑会默认使用vscode打开</p>
-<h2 id="三、进入预览"><a href="#三、进入预览" class="headerlink" title="三、进入预览"></a>三、进入预览</h2><p>进入预览有三种方式</p>
-<p>方法一：点击工作区右上角的按钮</p>
+<h3 id="鼠标右键，点击“打开方式”，点击“用vscode打开”"><a href="#鼠标右键，点击“打开方式”，点击“用vscode打开”" class="headerlink" title="鼠标右键，点击“打开方式”，点击“用vscode打开”"></a>鼠标右键，点击“打开方式”，点击“用vscode打开”</h3><p>做完这一步后，以后就可以直接点开md文件，原因是电脑会默认使用vscode打开</p>
+<h2 id="三、进入预览"><a href="#三、进入预览" class="headerlink" title="三、进入预览"></a>三、进入预览</h2><h3 id="进入预览有三种方式"><a href="#进入预览有三种方式" class="headerlink" title="进入预览有三种方式"></a>进入预览有三种方式</h3><p>方式一：点击工作区右上角的按钮</p>
 <p><img src="https://note.youdao.com/yws/api/personal/file/WEB774796ee308bf8dfe3e0de42faf59f9c?method=download&shareKey=1419dfaeabad3fabf3540d4d949d7a5a" alt="avatar"></p>
-<p>方法二：快捷键（Ctrl+K V）</p>
-<p>方法三：按F1，输入Markdown，选择Open Locked Preview to the Side即可</p>
+<p>方式二：快捷键（Ctrl+K V）</p>
+<p>方式三：按F1，输入Markdown，选择Open Locked Preview to the Side即可</p>
 
       
 
