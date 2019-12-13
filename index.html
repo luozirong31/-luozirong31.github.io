@@ -161,23 +161,20 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/13/%E6%88%91%E7%9A%84%E7%AC%AC%E5%85%AB%E7%AF%87%E6%96%87%E7%AB%A0/">我的第八篇文章</a>
+      <a class="article-title" href="/2019/12/13/%E6%88%91%E7%9A%84%E7%AC%AC%E5%85%AB%E7%AF%87%E6%96%87%E7%AB%A0/">代码练习03：输入一个m*n的整数矩阵，求其转置矩阵</a>
     </h1>
   
 
         
         <a href="/2019/12/13/%E6%88%91%E7%9A%84%E7%AC%AC%E5%85%AB%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2019-12-13T12:04:24.979Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-13</time>
+  	<time datetime="2019-12-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<p>title: 代码练习03：输入一个m*n的整数矩阵，求其转置矩阵(M,N由键盘输入)</p>
-<p>date: 2019-12-13</p>
-<h2 id="tags-c语言"><a href="#tags-c语言" class="headerlink" title="tags: c语言"></a>tags: c语言</h2><h2 id="在动手写程序之前，要在脑中有清晰的思路。想要程序去做什么首先自己要明确自己想做什么，思考你的程序需要哪些信息，要进行哪些计算和控制，以及程序应该要报告什么信息。"><a href="#在动手写程序之前，要在脑中有清晰的思路。想要程序去做什么首先自己要明确自己想做什么，思考你的程序需要哪些信息，要进行哪些计算和控制，以及程序应该要报告什么信息。" class="headerlink" title="在动手写程序之前，要在脑中有清晰的思路。想要程序去做什么首先自己要明确自己想做什么，思考你的程序需要哪些信息，要进行哪些计算和控制，以及程序应该要报告什么信息。"></a>在动手写程序之前，要在脑中有清晰的思路。想要程序去做什么首先自己要明确自己想做什么，思考你的程序需要哪些信息，要进行哪些计算和控制，以及程序应该要报告什么信息。</h2><h1 id="输入一个m-n的整数矩阵，求其转置矩阵-m-n由键盘输入"><a href="#输入一个m-n的整数矩阵，求其转置矩阵-m-n由键盘输入" class="headerlink" title="输入一个m*n的整数矩阵，求其转置矩阵(m,n由键盘输入)"></a>输入一个m*n的整数矩阵，求其转置矩阵(m,n由键盘输入)</h1><h3 id="分析：将一个数组-a的行和列元素互换后，存到另一个数组-b中"><a href="#分析：将一个数组-a的行和列元素互换后，存到另一个数组-b中" class="headerlink" title="分析：将一个数组 a的行和列元素互换后，存到另一个数组 b中"></a><em>分析：将一个数组 a的行和列元素互换后，存到另一个数组 b中</em></h3><h2 id="思路-步骤："><a href="#思路-步骤：" class="headerlink" title="思路+步骤："></a>思路+步骤：</h2><p>1、首先我们需要定义一个数组来存储输入的整数,数组名为a,因为行和列是随机输入的，所以先定义数组的行和列都各有100个元素</p>
+        <h3 id="在动手写程序之前，要在脑中有清晰的思路。想要程序去做什么首先自己要明确自己想做什么，思考你的程序需要哪些信息，要进行哪些计算和控制，以及程序应该要报告什么信息"><a href="#在动手写程序之前，要在脑中有清晰的思路。想要程序去做什么首先自己要明确自己想做什么，思考你的程序需要哪些信息，要进行哪些计算和控制，以及程序应该要报告什么信息" class="headerlink" title="在动手写程序之前，要在脑中有清晰的思路。想要程序去做什么首先自己要明确自己想做什么，思考你的程序需要哪些信息，要进行哪些计算和控制，以及程序应该要报告什么信息"></a>在动手写程序之前，要在脑中有清晰的思路。想要程序去做什么首先自己要明确自己想做什么，思考你的程序需要哪些信息，要进行哪些计算和控制，以及程序应该要报告什么信息</h3><h1 id="输入一个m-n的整数矩阵，求其转置矩阵"><a href="#输入一个m-n的整数矩阵，求其转置矩阵" class="headerlink" title="输入一个m*n的整数矩阵，求其转置矩阵"></a>输入一个m*n的整数矩阵，求其转置矩阵</h1><h2 id="分析：将一个数组-a的行和列元素互换后，存到另一个数组-b中"><a href="#分析：将一个数组-a的行和列元素互换后，存到另一个数组-b中" class="headerlink" title="分析：将一个数组 a的行和列元素互换后，存到另一个数组 b中"></a>分析：将一个数组 a的行和列元素互换后，存到另一个数组 b中</h2><h2 id="思路-步骤"><a href="#思路-步骤" class="headerlink" title="思路+步骤"></a>思路+步骤</h2><p>1、首先我们需要定义一个数组来存储输入的整数,数组名为a,因为行和列是随机输入的，所以先定义数组的行和列都各有100个元素</p>
 <p>2、定义元素转换后存放的数组，数组名为b</p>
 <p>3、定义随机输入的行和列，变量名为m，n</p>
 <p>4、定义循环变量，变量名为i，j</p>
@@ -186,9 +183,9 @@
 <p>7、每完成一轮循环后，a和b的行列互换</p>
 <p>8、用两个for循环(嵌套)，把互换后整数依次存放到数组b中</p>
 <p>9、打印数组b</p>
-<h2 id="源代码："><a href="#源代码：" class="headerlink" title="源代码："></a>源代码：</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB2153bd42be9a0526b15b890f95c50638?method=download&shareKey=2015ce9b7296b1519e944506099a1d9f" alt="1"></p>
-<h2 id="运行结果："><a href="#运行结果：" class="headerlink" title="运行结果："></a>运行结果：</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7283ee6c848d112278dd1d65101239f1?method=download&shareKey=21e13e9baace3fc3e1db1c77bc842cf6" alt="2"></p>
-<h3 id="磨刀不误砍柴工，应该养成先规划再动手编写代码的好习惯，用纸和笔记录下程序的目标和设计框架。这样在编写代码的过程中更加得心应手、条理清晰。"><a href="#磨刀不误砍柴工，应该养成先规划再动手编写代码的好习惯，用纸和笔记录下程序的目标和设计框架。这样在编写代码的过程中更加得心应手、条理清晰。" class="headerlink" title="磨刀不误砍柴工，应该养成先规划再动手编写代码的好习惯，用纸和笔记录下程序的目标和设计框架。这样在编写代码的过程中更加得心应手、条理清晰。"></a>磨刀不误砍柴工，应该养成先规划再动手编写代码的好习惯，用纸和笔记录下程序的目标和设计框架。这样在编写代码的过程中更加得心应手、条理清晰。</h3>
+<h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB2153bd42be9a0526b15b890f95c50638?method=download&shareKey=2015ce9b7296b1519e944506099a1d9f" alt="1"></p>
+<h2 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7283ee6c848d112278dd1d65101239f1?method=download&shareKey=21e13e9baace3fc3e1db1c77bc842cf6" alt="2"></p>
+<h3 id="磨刀不误砍柴工，应该养成先规划再动手编写代码的好习惯，用纸和笔记录下程序的目标和设计框架。这样在编写代码的过程中更加得心应手、条理清晰"><a href="#磨刀不误砍柴工，应该养成先规划再动手编写代码的好习惯，用纸和笔记录下程序的目标和设计框架。这样在编写代码的过程中更加得心应手、条理清晰" class="headerlink" title="磨刀不误砍柴工，应该养成先规划再动手编写代码的好习惯，用纸和笔记录下程序的目标和设计框架。这样在编写代码的过程中更加得心应手、条理清晰"></a>磨刀不误砍柴工，应该养成先规划再动手编写代码的好习惯，用纸和笔记录下程序的目标和设计框架。这样在编写代码的过程中更加得心应手、条理清晰</h3>
       
 
       
@@ -196,6 +193,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">c语言</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -576,8 +584,8 @@ gitalk.render('gitalk-container')
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="纸上得来终觉浅，绝知此事要躬行，编程也是一样。不仅要看懂别人的代码，还要自己去实际敲一遍，以便加深印象"><a href="#纸上得来终觉浅，绝知此事要躬行，编程也是一样。不仅要看懂别人的代码，还要自己去实际敲一遍，以便加深印象" class="headerlink" title="纸上得来终觉浅，绝知此事要躬行，编程也是一样。不仅要看懂别人的代码，还要自己去实际敲一遍，以便加深印象"></a>纸上得来终觉浅，绝知此事要躬行，编程也是一样。不仅要看懂别人的代码，还要自己去实际敲一遍，以便加深印象</h3><h1 id="如何输出水仙花数？"><a href="#如何输出水仙花数？" class="headerlink" title="如何输出水仙花数？"></a>如何输出水仙花数？</h1><h2 id="注：所谓的“水仙花数”是指一个3位数，其每各位上的数字的立方和等于该数本身。"><a href="#注：所谓的“水仙花数”是指一个3位数，其每各位上的数字的立方和等于该数本身。" class="headerlink" title="注：所谓的“水仙花数”是指一个3位数，其每各位上的数字的立方和等于该数本身。"></a>注：所谓的“水仙花数”是指一个3位数，其每各位上的数字的立方和等于该数本身。</h2><p>例子：153是一个水仙花数，因为153=1^3+5^3+3^3</p>
-<h2 id="源代码："><a href="#源代码：" class="headerlink" title="源代码："></a>源代码：</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB4d16fff2ec9aa0846fde3ac5ea921f24?method=download&shareKey=40ac6585722ed081f9e197a1b211d657" alt="01"></p>
-<h2 id="运行结果："><a href="#运行结果：" class="headerlink" title="运行结果："></a>运行结果：</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB205c9a28ffb4691a995879d7f28c2713?method=download&shareKey=af80eba58d6de63be83bf988e3faa94d" alt="2"></p>
+<h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB4d16fff2ec9aa0846fde3ac5ea921f24?method=download&shareKey=40ac6585722ed081f9e197a1b211d657" alt="01"></p>
+<h2 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB205c9a28ffb4691a995879d7f28c2713?method=download&shareKey=af80eba58d6de63be83bf988e3faa94d" alt="2"></p>
 
       
 
@@ -1153,11 +1161,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">英语词法</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">工具使用</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">工具使用</a>
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">英语词法</a>
               </li>
              
               <li class="article-tag-list-item">
