@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://luozirong31.github.io">
-  <title>代码练习05：输入一个m*n的整数矩阵，对其每行求和，和单独存放在一个一维数组中 | 大毛的技术博客</title>
+  <title>代码练习05：输入一个m*n的整数矩阵，对其每行/列求和，和单独存放在一个一维数组中 | 大毛的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="输入一个m*n的整数矩阵，对其每行求和，和单独存放在一个一维数组中源代码 运行结果">
+  <meta name="description" content="输入一个m*n的整数矩阵，对其每行&#x2F;列求和，和单独存放在一个一维数组中每行求和源代码 运行结果 每列求和源代码 运行结果">
 <meta name="keywords" content="c语言">
 <meta property="og:type" content="article">
-<meta property="og:title" content="代码练习05：输入一个m*n的整数矩阵，对其每行求和，和单独存放在一个一维数组中">
+<meta property="og:title" content="代码练习05：输入一个m*n的整数矩阵，对其每行&#x2F;列求和，和单独存放在一个一维数组中">
 <meta property="og:url" content="https:&#x2F;&#x2F;luozirong31.github.io&#x2F;2019&#x2F;12&#x2F;15&#x2F;%E6%88%91%E7%9A%84%E7%AC%AC%E5%8D%81%E7%AF%87%E6%96%87%E7%AB%A0&#x2F;index.html">
 <meta property="og:site_name" content="大毛的技术博客">
-<meta property="og:description" content="输入一个m*n的整数矩阵，对其每行求和，和单独存放在一个一维数组中源代码 运行结果">
+<meta property="og:description" content="输入一个m*n的整数矩阵，对其每行&#x2F;列求和，和单独存放在一个一维数组中每行求和源代码 运行结果 每列求和源代码 运行结果">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB7589db7ccab3e6b08584c9199c1cd5f9?method=download&amp;shareKey=84453fd841ebdaabfa491cb3b541f985">
 <meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEBa55d7f71408a08cb6421acb4af142725?method=download&amp;shareKey=4bebd7ff2bb8294b757a71367f3913b8">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEBe57a910bf6a4effb24502e91b55ddaad?method=download&amp;shareKey=4040e978d118553f8554d23f6a046d98">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB093cca17c05dd96d17ede7b615be2a1f?method=download&amp;shareKey=2a7e09bde0cbc4ba4161b49eb653ec7d">
 <meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEBfceab078726dab2ae91d0627184ee630?method=download&amp;shareKey=242861e18ec99c80822e73bc686396a6">
-<meta property="og:updated_time" content="2019-12-15T14:51:06.087Z">
+<meta property="og:updated_time" content="2019-12-15T15:15:55.084Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB7589db7ccab3e6b08584c9199c1cd5f9?method=download&amp;shareKey=84453fd841ebdaabfa491cb3b541f985">
   
@@ -164,7 +166,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      代码练习05：输入一个m*n的整数矩阵，对其每行求和，和单独存放在一个一维数组中
+      代码练习05：输入一个m*n的整数矩阵，对其每行/列求和，和单独存放在一个一维数组中
     </h1>
   
 
@@ -177,8 +179,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="输入一个m-n的整数矩阵，对其每行求和，和单独存放在一个一维数组中"><a href="#输入一个m-n的整数矩阵，对其每行求和，和单独存放在一个一维数组中" class="headerlink" title="输入一个m*n的整数矩阵，对其每行求和，和单独存放在一个一维数组中"></a>输入一个m*n的整数矩阵，对其每行求和，和单独存放在一个一维数组中</h1><h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7589db7ccab3e6b08584c9199c1cd5f9?method=download&shareKey=84453fd841ebdaabfa491cb3b541f985" alt="1"></p>
-<h2 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEBa55d7f71408a08cb6421acb4af142725?method=download&shareKey=4bebd7ff2bb8294b757a71367f3913b8" alt="2"></p>
+        <h1 id="输入一个m-n的整数矩阵，对其每行-列求和，和单独存放在一个一维数组中"><a href="#输入一个m-n的整数矩阵，对其每行-列求和，和单独存放在一个一维数组中" class="headerlink" title="输入一个m*n的整数矩阵，对其每行/列求和，和单独存放在一个一维数组中"></a>输入一个m*n的整数矩阵，对其每行/列求和，和单独存放在一个一维数组中</h1><h2 id="每行求和"><a href="#每行求和" class="headerlink" title="每行求和"></a>每行求和</h2><h3 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7589db7ccab3e6b08584c9199c1cd5f9?method=download&shareKey=84453fd841ebdaabfa491cb3b541f985" alt="1"></p>
+<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBa55d7f71408a08cb6421acb4af142725?method=download&shareKey=4bebd7ff2bb8294b757a71367f3913b8" alt="2"></p>
+<h2 id="每列求和"><a href="#每列求和" class="headerlink" title="每列求和"></a>每列求和</h2><h3 id="源代码-1"><a href="#源代码-1" class="headerlink" title="源代码"></a>源代码</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEBe57a910bf6a4effb24502e91b55ddaad?method=download&shareKey=4040e978d118553f8554d23f6a046d98" alt="3"></p>
+<h3 id="运行结果-1"><a href="#运行结果-1" class="headerlink" title="运行结果"></a>运行结果</h3><p><img src="https://note.youdao.com/yws/api/personal/file/WEB093cca17c05dd96d17ede7b615be2a1f?method=download&shareKey=2a7e09bde0cbc4ba4161b49eb653ec7d" alt="4"></p>
 <p><img src="https://note.youdao.com/yws/api/personal/file/WEBfceab078726dab2ae91d0627184ee630?method=download&shareKey=242861e18ec99c80822e73bc686396a6" alt="3"></p>
 
       
@@ -443,15 +447,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">工具使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">英语词法</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">c语言</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color5">工具使用</a>
               </li>
             
             <div class="clearfix"></div>
