@@ -6,21 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://luozirong31.github.io">
-  <title>代码练习01：如何输出水仙花数？ | 大毛的技术博客</title>
+  <title>高等数学01:求y=x^x的导 | 大毛的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="纸上得来终觉浅，绝知此事要躬行，编程也是一样。不仅要看懂别人的代码，还要自己去实际敲一遍，以便加深印象如何输出水仙花数？注：所谓的“水仙花数”是指一个3位数，其每各位上的数字的立方和等于该数本身。例子：153是一个水仙花数，因为153=1^3+5^3+3^3 源代码 运行结果">
-<meta name="keywords" content="c语言">
+  <meta name="description" content="如何求y=x^x的导方法一：运用复合函数求导法则来求导 方法二：运用对数求导法来求导  The future belongs to those who know where they belong.">
+<meta name="keywords" content="高等数学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="代码练习01：如何输出水仙花数？">
-<meta property="og:url" content="https:&#x2F;&#x2F;luozirong31.github.io&#x2F;2019&#x2F;12&#x2F;07&#x2F;%E6%88%91%E7%9A%84%E7%AC%AC%E5%9B%9B%E7%AF%87%E6%96%87%E7%AB%A0&#x2F;index.html">
+<meta property="og:title" content="高等数学01:求y=x^x的导">
+<meta property="og:url" content="https:&#x2F;&#x2F;luozirong31.github.io&#x2F;2019&#x2F;12&#x2F;16&#x2F;%E6%88%91%E7%9A%84%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0&#x2F;index.html">
 <meta property="og:site_name" content="大毛的技术博客">
-<meta property="og:description" content="纸上得来终觉浅，绝知此事要躬行，编程也是一样。不仅要看懂别人的代码，还要自己去实际敲一遍，以便加深印象如何输出水仙花数？注：所谓的“水仙花数”是指一个3位数，其每各位上的数字的立方和等于该数本身。例子：153是一个水仙花数，因为153=1^3+5^3+3^3 源代码 运行结果">
+<meta property="og:description" content="如何求y=x^x的导方法一：运用复合函数求导法则来求导 方法二：运用对数求导法来求导  The future belongs to those who know where they belong.">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB4d16fff2ec9aa0846fde3ac5ea921f24?method=download&amp;shareKey=40ac6585722ed081f9e197a1b211d657">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB205c9a28ffb4691a995879d7f28c2713?method=download&amp;shareKey=af80eba58d6de63be83bf988e3faa94d">
-<meta property="og:updated_time" content="2019-12-13T15:07:23.426Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEBede5786715cbb770a614c2ca10d8d99c?method=download&amp;shareKey=4e39efd7cbebdddda12e0ecc52c3a4d7">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB83816d5d9f14dc9841f00c03aa4b6de1?method=download&amp;shareKey=b3b92cf650b4835e15ab05dd6900a007">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB3f664ab9906274b515404847d828cc37?method=download&amp;shareKey=6f1f43a5da1394db572375a5bc2c4309">
+<meta property="og:updated_time" content="2019-12-16T13:20:40.137Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB4d16fff2ec9aa0846fde3ac5ea921f24?method=download&amp;shareKey=40ac6585722ed081f9e197a1b211d657">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEBede5786715cbb770a614c2ca10d8d99c?method=download&amp;shareKey=4e39efd7cbebdddda12e0ecc52c3a4d7">
   
     <link rel="alternative" href="/atom.xml" title="大毛的技术博客" type="application/atom+xml">
   
@@ -156,30 +157,30 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第四篇文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-我的第十一篇文章" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      代码练习01：如何输出水仙花数？
+      高等数学01:求y=x^x的导
     </h1>
   
 
         
-        <a href="/2019/12/07/%E6%88%91%E7%9A%84%E7%AC%AC%E5%9B%9B%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2019-12-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-07</time>
+        <a href="/2019/12/16/%E6%88%91%E7%9A%84%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-article-date">
+  	<time datetime="2019-12-15T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="纸上得来终觉浅，绝知此事要躬行，编程也是一样。不仅要看懂别人的代码，还要自己去实际敲一遍，以便加深印象"><a href="#纸上得来终觉浅，绝知此事要躬行，编程也是一样。不仅要看懂别人的代码，还要自己去实际敲一遍，以便加深印象" class="headerlink" title="纸上得来终觉浅，绝知此事要躬行，编程也是一样。不仅要看懂别人的代码，还要自己去实际敲一遍，以便加深印象"></a>纸上得来终觉浅，绝知此事要躬行，编程也是一样。不仅要看懂别人的代码，还要自己去实际敲一遍，以便加深印象</h3><h1 id="如何输出水仙花数？"><a href="#如何输出水仙花数？" class="headerlink" title="如何输出水仙花数？"></a>如何输出水仙花数？</h1><h2 id="注：所谓的“水仙花数”是指一个3位数，其每各位上的数字的立方和等于该数本身。"><a href="#注：所谓的“水仙花数”是指一个3位数，其每各位上的数字的立方和等于该数本身。" class="headerlink" title="注：所谓的“水仙花数”是指一个3位数，其每各位上的数字的立方和等于该数本身。"></a>注：所谓的“水仙花数”是指一个3位数，其每各位上的数字的立方和等于该数本身。</h2><p>例子：153是一个水仙花数，因为153=1^3+5^3+3^3</p>
-<h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB4d16fff2ec9aa0846fde3ac5ea921f24?method=download&shareKey=40ac6585722ed081f9e197a1b211d657" alt="01"></p>
-<h2 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB205c9a28ffb4691a995879d7f28c2713?method=download&shareKey=af80eba58d6de63be83bf988e3faa94d" alt="2"></p>
-
+        <h1 id="如何求y-x-x的导"><a href="#如何求y-x-x的导" class="headerlink" title="如何求y=x^x的导"></a>如何求y=x^x的导</h1><h2 id="方法一：运用复合函数求导法则来求导"><a href="#方法一：运用复合函数求导法则来求导" class="headerlink" title="方法一：运用复合函数求导法则来求导"></a>方法一：运用复合函数求导法则来求导</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEBede5786715cbb770a614c2ca10d8d99c?method=download&shareKey=4e39efd7cbebdddda12e0ecc52c3a4d7" alt="1"></p>
+<h2 id="方法二：运用对数求导法来求导"><a href="#方法二：运用对数求导法来求导" class="headerlink" title="方法二：运用对数求导法来求导"></a>方法二：运用对数求导法来求导</h2><p><img src="https://note.youdao.com/yws/api/personal/file/WEB83816d5d9f14dc9841f00c03aa4b6de1?method=download&shareKey=b3b92cf650b4835e15ab05dd6900a007" alt="2"></p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB3f664ab9906274b515404847d828cc37?method=download&shareKey=6f1f43a5da1394db572375a5bc2c4309" alt=""></p>
+<h4 id="The-future-belongs-to-those-who-know-where-they-belong"><a href="#The-future-belongs-to-those-who-know-where-they-belong" class="headerlink" title="The future belongs to those who know where they belong."></a>The future belongs to those who know where they belong.</h4>
       
 
       
@@ -223,7 +224,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">c语言</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color5">高等数学</a>
         		</li>
       		
 		</ul>
@@ -279,7 +280,7 @@
     <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://luozirong31.github.io/2019/12/07/%E6%88%91%E7%9A%84%E7%AC%AC%E5%9B%9B%E7%AF%87%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://luozirong31.github.io/2019/12/16/%E6%88%91%E7%9A%84%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -293,18 +294,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/12/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%94%E7%AF%87%E6%96%87%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          如何把十进制转换成十六进制、八进制和二进制？
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/12/06/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">如何把二进制转换成十进制、十六进制和八进制？</div>
+    <a href="/2019/12/15/%E6%88%91%E7%9A%84%E7%AC%AC%E5%8D%81%E7%AF%87%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">代码练习05：输入一个m*n的整数矩阵，对其每行/列求和，和单独存放在一个一维数组中</div>
       <i class="icon-circle-right"></i>
     </a>
   
